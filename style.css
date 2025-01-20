@@ -1,3 +1,4 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body, html {
 }
 
 .main {
-    flex: 1; /* This allows the main content to expand and take up all available space */
+    flex: 1; /* Allows main content to expand and take up all available space */
     width: 100%;
     background: url(pic/bg.jpg);
     background-position: center;
@@ -30,17 +31,17 @@ body, html {
     justify-content: space-between;
 }
 
-/* Increase font size and add spacing between the navbar links */
+/* Navbar links */
 .navbar-nav a {
-    font-size: 18px; /* Increase font size */
-    margin: 0 15px;  /* Add horizontal spacing between links */
-    color: #000; /* Ensures links are black by default */
+    font-size: 18px;
+    margin: 0 15px;
+    color: #000;
     transition: color 0.4s ease;
     text-decoration: none;
 }
 
 .navbar-nav a:hover {
-    color: rgb(230, 104, 59); /* Hover color */
+    color: rgb(230, 104, 59);
 }
 
 .navbar .logo {
@@ -90,6 +91,7 @@ ul li a:hover {
 .info a:hover {
     background: rgb(59, 174, 209);
 }
+
 .info p, .achievements {
     text-align: justify;
     line-height: 1.8;
@@ -154,4 +156,77 @@ footer a {
 
 footer a:hover {
     color: rgb(59, 174, 209);
+}
+
+/* Responsiveness for tablets */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav a {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .info {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .info h1 {
+        font-size: 35px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 40%;
+        height: auto;
+        right: 50px;
+    }
+
+    .image img {
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* Responsiveness for mobile devices */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .navbar-nav a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .info {
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .info h3 {
+        font-size: 14px;
+    }
+
+    .image {
+        display: none; /* Hide image for small screens */
+    }
+
+    footer {
+        padding: 5px 0;
+    }
 }
