@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 /* ==================================================
    GLOBAL RESET & BASE STYLES
    ================================================== */
    * {
+=======
+/* General reset */
+* {
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body,
 html {
     height: 100%;
@@ -69,10 +75,49 @@ html {
     margin: auto;
     padding: 15px 0;
     display: flex;
+=======
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1; /* Allows main content to expand and take up all available space */
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     align-items: center;
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
+=======
+/* Navbar links */
+.navbar-nav a {
+    font-size: 18px;
+    margin: 0 15px;
+    color: #000;
+    transition: color 0.4s ease;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: rgb(230, 104, 59);
+}
+
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
 .navbar .logo {
     width: 160px;
     cursor: pointer;
@@ -80,6 +125,7 @@ html {
     margin-left: -2%;
 }
 
+<<<<<<< HEAD
 .navbar-nav a {
     font-size: 18px;
     margin: 0 15px;
@@ -122,6 +168,28 @@ ul li a:hover {
     text-align: justify;
     line-height: 1.5;
     padding-left: 4%;
+=======
+ul li a:hover {
+    color: rgb(230, 104, 59);
+}
+
+.info {
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+.info h1 {
+    font-size: 45px;
+    color: rgb(36, 32, 30);
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: justify;
+    line-height: 1.5;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
 }
 
 .info span {
@@ -129,12 +197,22 @@ ul li a:hover {
 }
 
 .info a {
+<<<<<<< HEAD
     display: inline-block;
     margin: 25px 0;
     padding: 10px 16px;
     background: rgb(36, 32, 30);
     color: #fff;
     border-radius: 10px;
+=======
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin: 25px 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    display: inline-block;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     transition: 0.4s ease;
 }
 
@@ -142,6 +220,7 @@ ul li a:hover {
     background: rgb(59, 174, 209);
 }
 
+<<<<<<< HEAD
 .info p,
 .achievements {
     text-align: justify;
@@ -162,6 +241,15 @@ li {
    ================================================== */
 .image {
     width: 25%;
+=======
+.info p, .achievements {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.image {
+    width: 30%;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     height: 60%;
     position: absolute;
     right: 100px;
@@ -171,7 +259,11 @@ li {
 .image img {
     position: absolute;
     height: 140%;
+<<<<<<< HEAD
     left: 30%;
+=======
+    left: 40%;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     transform: translate(-35%);
     bottom: 0;
     transition: left 2s ease;
@@ -182,6 +274,7 @@ li {
 }
 
 .icons a {
+<<<<<<< HEAD
     color: #000;
     text-decoration: none;
 }
@@ -191,6 +284,17 @@ li {
     margin-left: 7%;
     margin-right: -60px;
     color: #000;
+=======
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon {
+    margin-left: 7%;
+    color: #000;
+    margin-right: -60px;
+    font-size: 40px;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     transition: 0.4s ease;
 }
 
@@ -198,6 +302,7 @@ li {
     color: rgb(59, 174, 209);
 }
 
+<<<<<<< HEAD
 /* ==================================================
    FOOTER STYLES
    ================================================== */
@@ -208,6 +313,16 @@ footer {
     width: 100%;
     margin-top: auto;
     position: relative;
+=======
+footer {
+    background-color: #f1f1f1;
+    padding: 8px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    bottom: 2;
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
 }
 
 footer p {
@@ -223,6 +338,7 @@ footer a:hover {
     color: rgb(59, 174, 209);
 }
 
+<<<<<<< HEAD
 /* ==================================================
    CONTACT PAGE STYLES
    ================================================== */
@@ -321,6 +437,9 @@ footer a:hover {
    MEDIA QUERIES
    ================================================== */
 /* Tablet Devices */
+=======
+/* Responsiveness for tablets */
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -356,6 +475,7 @@ footer a:hover {
         left: 50%;
         transform: translate(-50%);
     }
+<<<<<<< HEAD
 
     .contact-content {
         flex-direction: column;
@@ -370,6 +490,11 @@ footer a:hover {
 }
 
 /* Mobile Devices */
+=======
+}
+
+/* Responsiveness for mobile devices */
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
 @media screen and (max-width: 480px) {
     .navbar {
         flex-direction: column;
@@ -396,13 +521,18 @@ footer a:hover {
     }
 
     .image {
+<<<<<<< HEAD
         display: none; /* Hide image on small screens */
+=======
+        display: none; /* Hide image for small screens */
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
     }
 
     footer {
         padding: 5px 0;
     }
 }
+<<<<<<< HEAD
 
 /* ==================================================
    PROJECT PAGE STYLES (CARDS)
@@ -488,3 +618,5 @@ footer a:hover {
         max-width: 330px;
     }
 }
+=======
+>>>>>>> 1defb88522fd3a171c81e15e83a9602928fa95ca
